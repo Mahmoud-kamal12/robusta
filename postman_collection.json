@@ -14,7 +14,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"vincenzo.jaskolski@example.org\",\r\n    \"password\":\"password\"\r\n}",
+					"raw": "{\r\n    \"email\":\"nbeer@example.org\",\r\n    \"password\":\"password\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -190,6 +190,29 @@
 						"api",
 						"all-reserved",
 						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add trip",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/store-trip",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"store-trip"
 					]
 				}
 			},
