@@ -76,8 +76,8 @@ class TripController extends Controller
         foreach ($lines as $line){
             TripLines::create([
                 "trip_id" => $trip->id,
-                "station_id" => $line->station_id,
-                "order" => $line->order,
+                "station_id" => $line["station_id"],
+                "order" => $line["order"],
                 "start" => 0,
                 "end" => 0
             ]);
@@ -91,5 +91,8 @@ class TripController extends Controller
             "start" => 0,
             "end" => 0
         ]);
+
+        return response()->json(["message" => "the trip added successfully" , "data" => $trip->load('allLines')]);
     }
 }
+

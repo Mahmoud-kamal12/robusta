@@ -12,4 +12,4 @@
 # Notes
     - In this task, I did not create a admin panel, and this is because I think it is not necessary , as it is mentioned at the end of the PDF file that it is a API.
 
-    - I did not add crud to add, delete or modify the bus or the city and the trips are available for add only, considering that they are sub-parts and not important. The greatest focus was on formulating the reservations.
+    - I did not add crud to add, delete or modify the bus or the city and the trips are available for add only, considering that they are sub-parts and not important. The greatest focus was on Writing an algorithm to add reservations
