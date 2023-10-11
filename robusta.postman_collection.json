@@ -198,8 +198,27 @@
 		{
 			"name": "add trip",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTcwMDA0NjUsImV4cCI6MTY5NzAwNDA2NSwibmJmIjoxNjk3MDAwNDY1LCJqdGkiOiJwaURZcGJ5ejJ2WENUTDVHIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Oxthj8qzcn-bvoT75RT6FsEJHU4d7_GGiepze0Zv3b0",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bus_id\":1,\r\n    \"start_station_id\":1,\r\n    \"end_station_id\":5,\r\n    \"road_map\" : [\r\n        {\r\n            \"station_id\":35,\r\n            \"order\" : 2\r\n        },\r\n        {\r\n            \"station_id\":42,\r\n            \"order\" : 3\r\n        },\r\n        {\r\n            \"station_id\":15,\r\n            \"order\" : 4\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "http://127.0.0.1:8000/api/store-trip",
 					"protocol": "http",
